@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Malgudi Mylari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { cream: "#FFF8F0", paper: "#FCF9F8", maroon: "#7B1E1E", maroonDeep: "#5C050B", gold: "#D4AF37", goldSoft: "#F3D678", charcoal: "#1F1B1A", brown: "#564240" } }, fontFamily: { display: ["Libre Caslon Text", "serif"], body: ["Be Vietnam Pro", "sans-serif"] }, boxShadow: { ambient: "0 24px 60px rgba(92, 5, 11, 0.12)", soft: "0 16px 40px rgba(48, 24, 22, 0.10)" } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell flex items-center justify-between px-5 py-4 lg:px-8">
+      <a href="./index.html"><img src="./logo.svg" alt="Malgudi Mylari logo" class="h-11 w-auto md:h-14" /></a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-brand-brown lg:flex">
+        <a href="./story.html" class="nav-link">Our Story</a>
+        <a href="./specialties.html" class="nav-link">Specialties</a>
+        <a href="./menu.html" class="nav-link active">Menu</a>
+        <a href="./experience.html" class="nav-link">Experience</a>
+        <a href="./franchise.html" class="nav-link">Franchise</a>
+      </nav>
+      <a href="./reserve.html" class="btn-primary">Reserve A Table</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-image px-5 py-24 text-white lg:px-8" style="--overlay: linear-gradient(120deg, rgba(17, 9, 9, 0.88), rgba(17, 9, 9, 0.76)); --image: url('./imgs/4.jpeg');">
+      <div class="site-shell">
+        <p class="brand-chip">Curated Menu</p>
+        <h1 class="max-w-3xl font-display text-5xl leading-tight md:text-6xl">A menu written for serious appetites.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-white/80">Every category is rooted in South Indian non-veg depth: broth, roast, fry, and bold pairing dishes.</p>
+        <div class="mt-12 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="grid gap-5 md:grid-cols-2">
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-6">
+            <p class="eyebrow text-brand-goldSoft">From The Pot</p>
+            <ul class="mt-5 space-y-4 text-white/85">
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Nati Koli Pulusu</span><span>Rs. 330</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Mutton Chops Masala</span><span>Rs. 370</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Naati Style Liver Fry</span><span>Rs. 260</span></li>
+              <li class="flex items-center justify-between gap-4"><span>Bone Marrow Pepper Rasam</span><span>Rs. 210</span></li>
+            </ul>
+          </article>
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-6">
+            <p class="eyebrow text-brand-goldSoft">Grill & Roast</p>
+            <ul class="mt-5 space-y-4 text-white/85">
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Ghee Roast Chicken</span><span>Rs. 340</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Smoked Mutton Seekh</span><span>Rs. 320</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-white/10 pb-4"><span>Chilli Fish Tawa</span><span>Rs. 300</span></li>
+              <li class="flex items-center justify-between gap-4"><span>Firewood Prawns Sukka</span><span>Rs. 390</span></li>
+            </ul>
+          </article>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-2">
+            <div class="photo-frame sm:col-span-2 lg:col-span-2">
+              <img src="./imgs/20.jpeg" alt="Mylari dosa with chutney pudi" class="h-48 md:h-56" />
+            </div>
+            <div class="photo-frame">
+              <img src="./imgs/19.jpeg" alt="Mutton chops served with lemon" class="h-44 md:h-48" />
+            </div>
+            <div class="photo-frame">
+              <img src="./imgs/16.jpeg" alt="Golden dosa served on banana leaf" class="h-44 md:h-48" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

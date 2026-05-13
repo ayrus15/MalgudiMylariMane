@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Specialties | Malgudi Mylari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { cream: "#FFF8F0", paper: "#FCF9F8", maroon: "#7B1E1E", maroonDeep: "#5C050B", gold: "#D4AF37", goldSoft: "#F3D678", charcoal: "#1F1B1A", brown: "#564240" } }, fontFamily: { display: ["Libre Caslon Text", "serif"], body: ["Be Vietnam Pro", "sans-serif"] }, boxShadow: { ambient: "0 24px 60px rgba(92, 5, 11, 0.12)", soft: "0 16px 40px rgba(48, 24, 22, 0.10)" } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell flex items-center justify-between px-5 py-4 lg:px-8">
+      <a href="./index.html"><img src="./logo.svg" alt="Malgudi Mylari logo" class="h-11 w-auto md:h-14" /></a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-brand-brown lg:flex">
+        <a href="./story.html" class="nav-link">Our Story</a>
+        <a href="./specialties.html" class="nav-link active">Specialties</a>
+        <a href="./menu.html" class="nav-link">Menu</a>
+        <a href="./experience.html" class="nav-link">Experience</a>
+        <a href="./franchise.html" class="nav-link">Franchise</a>
+      </nav>
+      <a href="./reserve.html" class="btn-primary">Reserve A Table</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero" style="--page-image: url('./imgs/18.jpeg');">
+      <div class="page-hero-inner site-shell px-5 py-24 text-white lg:px-8 lg:py-28">
+        <p class="brand-chip">Signature Specialties</p>
+        <h1 class="max-w-3xl font-display text-5xl leading-tight md:text-6xl">Built for guests who crave the real fire of the South.</h1>
+      </div>
+    </section>
+    <section class="px-5 py-24 lg:px-8">
+      <div class="site-shell">
+        <div class="kolam-divider mx-auto mb-10 max-w-xs"></div>
+        <div class="grid gap-6 lg:grid-cols-4">
+          <article class="content-card overflow-hidden transition hover:-translate-y-1">
+            <img src="./imgs/18.jpeg" alt="Mutton pepper fry" class="h-56 w-full object-cover" />
+            <div class="p-6"><div class="flex items-start justify-between gap-4"><h3 class="font-display text-2xl text-brand-charcoal">Mutton Pepper Fry</h3><span class="text-sm font-semibold text-brand-maroon">Rs. 360</span></div><p class="mt-4 leading-7 text-brand-brown">Dry-roasted bone-in mutton tossed with pepper, onion petals, curry leaves, and a leaf-lined finish.</p></div>
+          </article>
+          <article class="content-card overflow-hidden transition hover:-translate-y-1">
+            <img src="./imgs/10.jpeg" alt="Country chicken saaru" class="h-56 w-full object-cover" />
+            <div class="p-6"><div class="flex items-start justify-between gap-4"><h3 class="font-display text-2xl text-brand-charcoal">Country Chicken Saaru</h3><span class="text-sm font-semibold text-brand-maroon">Rs. 340</span></div><p class="mt-4 leading-7 text-brand-brown">House-pounded masala, slow-simmered stock, and a bright orange broth made for dosa, rice, or second helpings.</p></div>
+          </article>
+          <article class="content-card overflow-hidden transition hover:-translate-y-1">
+            <img src="./imgs/21.jpeg" alt="Country chicken fry" class="h-56 w-full object-cover" />
+            <div class="p-6"><div class="flex items-start justify-between gap-4"><h3 class="font-display text-2xl text-brand-charcoal">Country Chicken Fry</h3><span class="text-sm font-semibold text-brand-maroon">Rs. 320</span></div><p class="mt-4 leading-7 text-brand-brown">Rustic chicken pieces finished in glossy masala with curry leaves and the unmistakable comfort of a home-style roast.</p></div>
+          </article>
+          <article class="content-card overflow-hidden transition hover:-translate-y-1">
+            <img src="./imgs/8.jpeg" alt="Donne biryani" class="h-56 w-full object-cover" />
+            <div class="p-6"><div class="flex items-start justify-between gap-4"><h3 class="font-display text-2xl text-brand-charcoal">Mylari Donne Biryani</h3><span class="text-sm font-semibold text-brand-maroon">Rs. 320</span></div><p class="mt-4 leading-7 text-brand-brown">Fragrant green-masala rice, tender meat chunks, and a soft-boiled egg that turns every serving into a signature moment.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

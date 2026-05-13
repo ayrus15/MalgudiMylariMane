@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 244" role="img">
+  <title>Malgudi Mylari Mane</title>
+  <desc>Retro 3D logo for Malgudi Mylari Mane restaurant</desc>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap');</style>
+  </defs>
+  <rect width="424" height="244" fill="#8B1A22" rx="16"/>
+  <text x="30" y="82" font-family="Fredoka One, cursive" font-size="70" fill="#2D3B8C" letter-spacing="3">MALGUDI</text>
+  <text x="30" y="154" font-family="Fredoka One, cursive" font-size="70" fill="#2D3B8C" letter-spacing="3">MYLARI</text>
+  <text x="30" y="226" font-family="Fredoka One, cursive" font-size="70" fill="#2D3B8C" letter-spacing="3">MANE</text>
+  <text x="24" y="76" font-family="Fredoka One, cursive" font-size="70" fill="#F5C518" stroke="#C49A00" stroke-width="1.5" paint-order="stroke" letter-spacing="3">MALGUDI</text>
+  <text x="24" y="148" font-family="Fredoka One, cursive" font-size="70" fill="#F5C518" stroke="#C49A00" stroke-width="1.5" paint-order="stroke" letter-spacing="3">MYLARI</text>
+  <text x="24" y="220" font-family="Fredoka One, cursive" font-size="70" fill="#F5C518" stroke="#C49A00" stroke-width="1.5" paint-order="stroke" letter-spacing="3">MANE</text>
+</svg>

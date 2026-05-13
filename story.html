@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story | Malgudi Mylari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { cream: "#FFF8F0", paper: "#FCF9F8", maroon: "#7B1E1E", maroonDeep: "#5C050B", gold: "#D4AF37", goldSoft: "#F3D678", charcoal: "#1F1B1A", brown: "#564240" } }, fontFamily: { display: ["Libre Caslon Text", "serif"], body: ["Be Vietnam Pro", "sans-serif"] }, boxShadow: { ambient: "0 24px 60px rgba(92, 5, 11, 0.12)", soft: "0 16px 40px rgba(48, 24, 22, 0.10)" } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="text-brand-charcoal">
+  <header class="site-header">
+    <div class="site-shell flex items-center justify-between px-5 py-4 lg:px-8">
+      <a href="./index.html"><img src="./logo.svg" alt="Malgudi Mylari logo" class="h-11 w-auto md:h-14" /></a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-brand-brown lg:flex">
+        <a href="./story.html" class="nav-link active">Our Story</a>
+        <a href="./specialties.html" class="nav-link">Specialties</a>
+        <a href="./menu.html" class="nav-link">Menu</a>
+        <a href="./experience.html" class="nav-link">Experience</a>
+        <a href="./franchise.html" class="nav-link">Franchise</a>
+      </nav>
+      <a href="./reserve.html" class="btn-primary">Reserve A Table</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero" style="--page-image: url('./imgs/10.jpeg');">
+      <div class="page-hero-inner site-shell px-5 py-24 text-white lg:px-8 lg:py-28">
+        <p class="brand-chip">Our Story</p>
+        <h1 class="max-w-3xl font-display text-5xl leading-tight md:text-6xl">Old Mysore memory, retold through bold nati flavours.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-white/82">Malgudi Mylari is imagined as a warm heritage house where regional non-veg cooking is treated with both authenticity and premium care.</p>
+      </div>
+    </section>
+    <section class="pattern-rings py-24">
+      <div class="site-shell grid gap-12 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+        <div>
+          <h2 class="font-display text-4xl text-brand-charcoal md:text-5xl">Where the aroma arrives before the memory does.</h2>
+          <p class="mt-6 text-lg leading-8 text-brand-brown">The concept draws from Karnataka home kitchens, old military hotel confidence, and the cultural warmth of Mysore hospitality. It is not about generic South Indian food. It is about food with a point of view: country chicken gravies, pepper-heavy mutton, roasted masalas, and dishes that feel lived-in.</p>
+          <p class="mt-5 leading-8 text-brand-brown">The design language intentionally balances luxury and familiarity. Creamy surfaces, maroon depth, and gold detailing let the cuisine feel elevated without disconnecting from its roots.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2">
+          <div class="photo-frame md:translate-y-10">
+            <img src="./imgs/11.jpeg" alt="Mylari dosa served with multiple gravies" class="h-72" />
+          </div>
+          <div class="photo-frame">
+            <img src="./imgs/1.jpeg" alt="Peppery mutton saaru served in steel bowls" class="h-72" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
