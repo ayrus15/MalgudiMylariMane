@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malgudi Mylari | Heritage South Indian Nati Dining</title>
+  <title>Malgudi Mylari | Heritage Refined</title>
   <meta
     name="description"
-    content="Malgudi Mylari is a heritage-inspired South Indian restaurant serving authentic nati-style non-veg cuisine with premium Mysore warmth."
+    content="Malgudi Mylari is a heritage-inspired South Indian restaurant celebrating Mysore's legendary flavors with modern premium presentation."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,399 +45,255 @@
   </script>
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="text-brand-charcoal">
+<body class="home-page text-brand-charcoal">
   <header class="site-header">
     <div class="site-shell flex items-center justify-between px-5 py-4 lg:px-8">
-      <a href="./index.html" class="flex items-center">
-        <img src="./logo.svg" alt="Malgudi Mylari logo" class="h-11 w-auto md:h-14" />
+      <a href="./index.html" class="font-display text-[1.15rem] font-semibold tracking-tight text-brand-maroon">
+        Malgudi <span class="text-brand-gold">Mylari</span>
       </a>
+      <button id="navToggle" aria-label="Open menu" class="mobile-nav-toggle lg:hidden">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
       <nav class="hidden items-center gap-8 text-sm font-medium text-brand-brown lg:flex">
-        <a href="./story.html" class="nav-link">Our Story</a>
-        <a href="./specialties.html" class="nav-link">Specialties</a>
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./story.html" class="nav-link">About</a>
         <a href="./menu.html" class="nav-link">Menu</a>
-        <a href="./experience.html" class="nav-link">Experience</a>
-        <a href="./franchise.html" class="nav-link">Franchise</a>
+        <a href="./gallery.html" class="nav-link">Gallery</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
       </nav>
-      <a href="./reserve.html" class="btn-primary">Reserve A Table</a>
+      <a href="./reserve.html" class="btn-primary whitespace-nowrap">Reserve a Table</a>
+    </div>
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <div class="flex items-center justify-between">
+          <a href="./index.html" class="font-display text-lg font-semibold text-brand-maroon">Malgudi Mylari</a>
+          <button id="mobileNavClose" aria-label="Close menu" class="mobile-nav-toggle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"></path></svg>
+          </button>
+        </div>
+        <nav class="mobile-links">
+          <a href="./index.html">Home</a>
+          <a href="./story.html">About</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./reserve.html">Reserve</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section
-      class="hero-image min-h-[88vh]"
-      style="
-        --overlay: radial-gradient(circle at top, rgba(212,175,55,0.16), transparent 34%), linear-gradient(120deg, rgba(9,7,7,0.65), rgba(9,7,7,0.34) 38%, rgba(9,7,7,0.72));
-        --image: url('./imgs/8.jpeg');
-      "
+      class="hero-image hero-home"
+      style="--overlay: linear-gradient(180deg, rgba(18, 12, 10, 0.34), rgba(18, 12, 10, 0.68)); --image: url('./imgs/dosa.jpg');"
     >
-      <div class="site-shell grid min-h-[88vh] items-end px-5 pb-16 pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-20">
-        <div class="max-w-2xl">
-          <p class="fade-up brand-chip">Heritage Mysore Dining</p>
-          <h1 class="fade-up-delay font-display text-5xl leading-tight text-white md:text-7xl">
-            Nati-style non-veg,
-            <span class="text-brand-goldSoft">slow-cooked with soul.</span>
+      <div class="site-shell flex min-h-[34rem] items-center justify-center px-5 py-24 text-center lg:px-8 lg:py-28">
+        <div class="max-w-4xl">
+          <h1 class="mx-auto max-w-3xl font-display text-5xl leading-[0.95] text-white md:text-6xl lg:text-[4.2rem]">
+            <span class="whitespace-nowrap">The Legendary Taste of</span><br />Mysore
           </h1>
-          <p class="fade-up-delay-2 mt-6 max-w-xl text-lg leading-8 text-white/85 md:text-xl">
-            Pepper mutton, country chicken saaru, fire-roasted gravies, and old-Mysore warmth served with depth,
-            smoke, and generosity.
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/90 md:text-xl md:leading-9">
+            Experience the authentic heritage of Mylari-style dosas and the finest Karnataka cuisine, crafted with legacy and love.
           </p>
-          <div class="fade-up-delay-2 mt-9 flex flex-wrap gap-4">
-            <a href="./menu.html" class="btn-primary">Explore Signature Dishes</a>
-            <a href="./story.html" class="btn-secondary-light">Discover The Legacy</a>
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <a href="./reserve.html" class="btn-primary hero-cta-primary">Reserve a Table</a>
+            <a href="./menu.html" class="hero-cta-secondary">View Menu</a>
           </div>
-        </div>
-
-        <div class="mt-12 lg:mt-0 lg:justify-self-end">
-          <div class="texture-panel max-w-md rounded-[28px] border border-white/35 p-6 shadow-ambient">
-            <div class="flex items-center justify-between border-b border-brand-gold/20 pb-4">
-              <div>
-                <p class="eyebrow text-brand-maroon">Tonight's Highlights</p>
-                <h2 class="mt-2 font-display text-2xl text-brand-charcoal">From the wood-fire kitchen</h2>
-              </div>
-              <span class="rounded-full bg-brand-gold/15 px-3 py-1 text-xs font-semibold text-brand-maroon">Chef Curated</span>
-            </div>
-            <div class="space-y-4 pt-5 text-sm text-brand-brown">
-              <div class="rounded-2xl bg-white/75 p-4">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 class="font-display text-xl text-brand-charcoal">Donne Biryani Bowl</h3>
-                    <p class="mt-1 leading-6">Fragrant green masala rice, tender meat, and a soft-boiled egg for the perfect finish.</p>
-                  </div>
-                  <span class="font-semibold text-brand-maroon">Rs. 280</span>
-                </div>
-              </div>
-              <div class="rounded-2xl bg-white/75 p-4">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 class="font-display text-xl text-brand-charcoal">Nati Koli Saaru</h3>
-                    <p class="mt-1 leading-6">Country chicken simmered in a peppery broth with bright curry leaves and slow-built spice.</p>
-                  </div>
-                  <span class="font-semibold text-brand-maroon">Rs. 340</span>
-                </div>
-              </div>
-              <div class="rounded-2xl bg-white/75 p-4">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 class="font-display text-xl text-brand-charcoal">Mutton Pepper Chops</h3>
-                    <p class="mt-1 leading-6">Bone-in chops seared dark with pepper, onion, and a sharp squeeze of lime.</p>
-                  </div>
-                  <span class="font-semibold text-brand-maroon">Rs. 390</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-y border-brand-gold/15 bg-white/70">
-      <div class="site-shell grid gap-8 px-5 py-6 text-sm text-brand-brown md:grid-cols-3 lg:px-8">
-        <div class="feature-strip">
-          <span class="feature-count">01</span>
-          <p>Traditional nati-style recipes inspired by Mysore homes, military hotels, and Sunday family feasts.</p>
-        </div>
-        <div class="feature-strip">
-          <span class="feature-count">02</span>
-          <p>Spice-forward non-veg menu with country chicken, mutton, fish fry, and slow-roasted specialties.</p>
-        </div>
-        <div class="feature-strip">
-          <span class="feature-count">03</span>
-          <p>Designed like a premium heritage house: rich, inviting, and ideal for families, food lovers, and celebrations.</p>
         </div>
       </div>
     </section>
 
     <section class="pattern-rings py-24">
-      <div class="site-shell grid items-center gap-14 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+      <div class="site-shell grid items-center gap-14 px-5 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
         <div>
-          <p class="eyebrow text-brand-maroon">A Quick Look Inside</p>
-          <h2 class="mt-4 font-display text-4xl leading-tight text-brand-charcoal md:text-5xl">
-            A restaurant concept built around story, spice, and hospitality.
-          </h2>
-          <p class="mt-7 max-w-xl text-lg leading-8 text-brand-brown">
-            The website is now split into dedicated pages so guests can browse your story, specialties, menu, dining
-            experience, franchise information, and reservation details with clearer navigation.
+          <h2 class="font-display text-4xl leading-tight text-brand-charcoal md:text-5xl">Our Heritage Story</h2>
+          <div class="mt-5 h-1.5 w-10 rounded-full bg-brand-gold"></div>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-brand-brown">
+            Born in the royal city of Mysore, Malgudi Mylari represents decades of culinary perfection. Our secret lies in the meticulous preparation of our unique dosa batter and the rich, complex flavors of our traditional chutneys.
           </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="./story.html" class="btn-outline">Read Our Story</a>
-            <a href="./experience.html" class="btn-outline">See The Experience</a>
-          </div>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-brand-brown">
+            Every dish we serve is a testament to the timeless recipes passed down through generations, ensuring that every bite transports you to the nostalgic streets of old Mysore, where hospitality and taste reigned supreme.
+          </p>
+          <a href="./story.html" class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand-maroon transition hover:text-brand-maroonDeep">
+            Read Full Story <span aria-hidden="true">→</span>
+          </a>
         </div>
-        <div class="grid gap-5 md:grid-cols-2">
-          <article class="photo-frame md:translate-y-10">
-            <img
-              src="./imgs/21.jpeg"
-              alt="Country chicken fry served in a steel bowl"
-              class="h-72"
-            />
-          </article>
-          <article class="photo-frame">
-            <img
-              src="./imgs/10.jpeg"
-              alt="Rich mutton curry served on a banana leaf setting"
-              class="h-72"
-            />
-          </article>
+        <div class="photo-frame md:translate-y-6 lg:translate-y-8">
+          <img src="./imgs/coffee.png" alt="Heritage filter coffee being poured into a brass tumbler" class="h-[24rem] md:h-[28rem]" />
         </div>
       </div>
     </section>
 
-    <section class="bg-white/80 py-24">
-      <div class="site-shell px-5 lg:px-8">
-        <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-2xl">
-            <p class="eyebrow text-brand-maroon">Food Gallery</p>
-            <h2 class="mt-4 font-display text-4xl leading-tight text-brand-charcoal md:text-5xl">
-              A carousel guests can browse before they even reach the table.
+    <section class="promise-section px-5 py-24 lg:px-8">
+      <div class="site-shell">
+        <div class="promise-intro">
+          <div>
+            <p class="eyebrow text-brand-maroon">The Mylari Promise</p>
+            <h2 class="mt-4 max-w-2xl font-display text-4xl leading-tight text-brand-charcoal md:text-5xl">
+              Every plate should feel like part of the family's legacy.
             </h2>
           </div>
-          <p class="max-w-xl text-brand-brown leading-8">
-            From buttery dosas to fiery pepper fry and soulful saaru, this gallery turns your real dishes into the center of the website.
+          <p class="max-w-xl text-lg leading-8 text-brand-brown">
+            We keep the process simple, the ingredients fresh, and the hospitality warm so the meal feels grounded and memorable on a laptop screen or a dining table.
           </p>
         </div>
 
-        <div class="food-carousel mt-12 rounded-[32px] border border-brand-gold/15 bg-[#fffaf5] p-5 shadow-soft md:p-7" data-carousel>
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-brand-maroon/75">Chef's Rotation</p>
-              <div class="carousel-progress mt-4 max-w-xs">
-                <div class="carousel-progress-bar" data-carousel-progress></div>
+        <div class="promise-panel mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <aside class="promise-note">
+            <span class="promise-note-kicker">Why it stands apart</span>
+            <h3 class="mt-4 font-display text-3xl text-brand-charcoal">A heritage kitchen that still feels personal.</h3>
+            <p class="mt-4 text-base leading-8 text-brand-brown">
+              The promise is not a slogan; it is the way the batter is rested, the tawa is managed, and each serving is plated with care.
+            </p>
+            <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+              <div class="promise-stat">
+                <strong>Freshly prepared</strong>
+                <span>Made in-house each day for stable texture and flavor.</span>
+              </div>
+              <div class="promise-stat">
+                <strong>Warm service</strong>
+                <span>Comfortable pacing and attentive presentation.</span>
               </div>
             </div>
-            <div class="flex items-center gap-3">
-              <button type="button" class="carousel-arrow rounded-full border border-brand-maroon/20 bg-white px-4 py-3 text-sm font-semibold text-brand-maroon" data-carousel-prev aria-label="Show previous food item">
-                Prev
-              </button>
-              <button type="button" class="carousel-arrow rounded-full border border-brand-maroon/20 bg-brand-maroon px-4 py-3 text-sm font-semibold text-white" data-carousel-next aria-label="Show next food item">
-                Next
-              </button>
+          </aside>
+
+          <div class="grid gap-6 md:grid-cols-2">
+          <article class="promise-card">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 4l12 12"></path>
+                <path d="M9 4c0 3-2 5-5 5"></path>
+                <path d="M20 15c-3 0-5 2-5 5"></path>
+              </svg>
             </div>
-          </div>
-
-          <div class="food-carousel-viewport mt-8">
-            <article class="food-slide active lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Donne Biryani">
-              <div class="photo-frame">
-                <img src="./imgs/8.jpeg" alt="Donne biryani with boiled egg" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 01</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Donne Biryani</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">A guest favorite for first-time visitors: aromatic rice, tender cuts, and enough richness to anchor the entire meal.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">Green masala fragrance with slow-cooked meat in every spoon.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">Served like a centerpiece dish for sharing or serious solo appetites.</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="food-slide lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Nati Koli Saaru">
-              <div class="photo-frame">
-                <img src="./imgs/10.jpeg" alt="Nati koli saaru in a steel bowl" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 02</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Nati Koli Saaru</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">A deep orange broth with country chicken, layered heat, and the kind of long finish that keeps guests dipping back in.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">Designed for gravy lovers who want pepper, warmth, and a clean spice arc.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">Pairs beautifully with dosa, idli, or a second round of rice.</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="food-slide lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Pepper Chicken Fry">
-              <div class="photo-frame">
-                <img src="./imgs/17.jpeg" alt="Pepper chicken fry close-up" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 03</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Pepper Chicken Fry</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">Dark-roasted, glossy, and packed with cracked pepper, this is the plate that gives the menu its attitude.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">Built for guests who like dry masala dishes with bite and aroma.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">Looks dramatic in the carousel and even better when served hot.</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="food-slide lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Mutton Pepper Fry">
-              <div class="photo-frame">
-                <img src="./imgs/18.jpeg" alt="Mutton pepper fry with curry leaves" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 04</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Mutton Pepper Fry</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">Bone-in mutton tossed with onion, curry leaves, and heavy pepper notes for a finish that feels unmistakably Karnataka.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">An ideal anchor dish for a non-veg specialties section.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">The leaf-lined plating keeps the visuals rooted in the real dining experience.</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="food-slide lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Mylari Dosa">
-              <div class="photo-frame">
-                <img src="./imgs/20.jpeg" alt="Mylari dosa with chutney pudi" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 05</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Mylari Dosa</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">Golden, buttery, and instantly recognizable, this slide broadens the site beyond curries and gives the gallery a breakfast icon.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">Adds a softer visual rhythm between the darker non-veg hero dishes.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">Perfect for families scanning what else they can order beyond lunch gravies.</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="food-slide lg:grid-cols-[1.08fr_0.92fr]" data-carousel-slide data-title="Country Chicken Fry">
-              <div class="photo-frame">
-                <img src="./imgs/21.jpeg" alt="Country chicken fry in a bowl" class="h-[25rem] md:h-[32rem]" />
-              </div>
-              <div class="flex flex-col justify-center rounded-[28px] bg-white p-7 md:p-9">
-                <p class="eyebrow text-brand-maroon">Slide 06</p>
-                <h3 class="mt-4 font-display text-4xl text-brand-charcoal">Country Chicken Fry</h3>
-                <p class="mt-5 text-lg leading-8 text-brand-brown">A homestyle finish with glossy masala, curry leaves, and enough texture to feel hearty, rustic, and memorable.</p>
-                <div class="mt-7 grid gap-4 text-sm text-brand-brown md:grid-cols-2">
-                  <div class="rounded-2xl bg-brand-paper p-4">Makes the website feel more personal because the photography is unmistakably real.</div>
-                  <div class="rounded-2xl bg-brand-paper p-4">Strong candidate for hero promos, specials, or festive feast banners later on.</div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            <button type="button" class="carousel-thumb is-active flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="0" aria-label="View Donne Biryani slide">
-              <img src="./imgs/8.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">Biryani</span>
-            </button>
-            <button type="button" class="carousel-thumb flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="1" aria-label="View Nati Koli Saaru slide">
-              <img src="./imgs/10.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">Saaru</span>
-            </button>
-            <button type="button" class="carousel-thumb flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="2" aria-label="View Pepper Chicken Fry slide">
-              <img src="./imgs/17.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">Chicken Fry</span>
-            </button>
-            <button type="button" class="carousel-thumb flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="3" aria-label="View Mutton Pepper Fry slide">
-              <img src="./imgs/18.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">Mutton</span>
-            </button>
-            <button type="button" class="carousel-thumb flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="4" aria-label="View Mylari Dosa slide">
-              <img src="./imgs/20.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">Dosa</span>
-            </button>
-            <button type="button" class="carousel-thumb flex items-center gap-3 rounded-2xl border border-brand-maroon/15 bg-white px-3 py-3 text-left" data-carousel-thumb data-index="5" aria-label="View Country Chicken Fry slide">
-              <img src="./imgs/21.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover" />
-              <span class="text-sm font-medium text-brand-charcoal">House Fry</span>
-            </button>
+            <h3 class="mt-5 font-display text-2xl text-brand-charcoal">Authentic Recipes</h3>
+            <p class="mt-3 text-sm leading-7 text-brand-brown">Time-honored preparation methods preserved for generations.</p>
+          </article>
+          <article class="promise-card">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 14c3.5-7 10-7 10-7s0 6.5-7 10c-3 1.5-5-.5-3-3z"></path>
+              </svg>
+            </div>
+            <h3 class="mt-5 font-display text-2xl text-brand-charcoal">Fresh Ingredients</h3>
+            <p class="mt-3 text-sm leading-7 text-brand-brown">Locally sourced produce and premium spices ground in-house daily.</p>
+          </article>
+          <article class="promise-card">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 7h12"></path>
+                <path d="M6 12h8"></path>
+                <path d="M6 17h12"></path>
+                <path d="M15 9l3-2v10l-3-2"></path>
+              </svg>
+            </div>
+            <h3 class="mt-5 font-display text-2xl text-brand-charcoal">Generational Legacy</h3>
+            <p class="mt-3 text-sm leading-7 text-brand-brown">A culinary heritage that spans decades of serving Mysore's finest.</p>
+          </article>
+          <article class="promise-card">
+            <div class="promise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21s-6-3.6-8-7.6C2.7 10.8 4.2 7 8 7c1.7 0 3 1 4 2.2C13 8 14.3 7 16 7c3.8 0 5.3 3.8 4 6.4-2 4-8 7.6-8 7.6z"></path>
+              </svg>
+            </div>
+            <h3 class="mt-5 font-display text-2xl text-brand-charcoal">Warm Hospitality</h3>
+            <p class="mt-3 text-sm leading-7 text-brand-brown">Treated like royalty in a humble, welcoming environment.</p>
+          </article>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="franchise-band px-5 py-20 text-center text-white lg:px-8">
+      <div class="site-shell">
+        <h2 class="font-display text-4xl text-brand-goldSoft md:text-5xl">Our Current Branches</h2>
+        <p class="mx-auto mt-6 max-w-3xl leading-8 text-white/85">
+          Visit us at our Bengaluru locations for authentic Mysore flavors, warm hospitality, and direct dine-in support.
+        </p>
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <article class="rounded-[28px] border border-white/10 bg-white/8 p-7 text-left shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-[2px]">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-brand-goldSoft">Branch 01</p>
+            <h3 class="mt-4 font-display text-3xl text-white">Nelamangala</h3>
+            <p class="mt-4 leading-8 text-white/88">
+              Yantaganahalli Palya, Near Bharat Petroleum Bunk, Mangalore Highway, Nelamangala, PO, Bengaluru, India-562123
+            </p>
+            <p class="mt-5 text-lg font-semibold text-white">+91 94838 88889</p>
+          </article>
+          <article class="rounded-[28px] border border-white/10 bg-white/8 p-7 text-left shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-[2px]">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-brand-goldSoft">Branch 02</p>
+            <h3 class="mt-4 font-display text-3xl text-white">Koramangala</h3>
+            <p class="mt-4 leading-8 text-white/88">
+              #21 SRS Tower, Near Mangala Kalyana Mantapa, KHB Colony, Koramangala 5th Block, Bengaluru, India-560095
+            </p>
+            <p class="mt-5 text-lg font-semibold text-white">+91 97313 62277 / 080 4123 5328</p>
+          </article>
+        </div>
+        <a href="mailto:bfco.india@gmail.com" class="mt-10 inline-flex rounded-xl border border-white/18 bg-white/12 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/18">
+          bfco.india@gmail.com
+        </a>
+        <p class="mt-10 text-white/88">Malgudi Mylari Mane is a Unit of Better Food Company.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer-refined border-t border-brand-gold/15">
     <div class="site-shell grid gap-12 px-5 py-14 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
       <div>
-        <img src="./logo.svg" alt="Malgudi Mylari logo" class="h-12 w-auto" />
+        <span class="footer-brand-mark">Malgudi Mylari</span>
         <p class="mt-5 max-w-xs leading-7 text-brand-brown">
-          Heritage-refined South Indian nati-style non-veg dining, plated with Mysore warmth and timeless appetite.
+          Heritage Refined. Bringing the authentic taste of Mysore to the world, one dosa at a time.
         </p>
+        <div class="mt-6 flex items-center gap-4 text-brand-maroon">
+          <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-brand-maroon/15 bg-white" aria-label="Share">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+              <path d="M18 8a3 3 0 1 0-2.83-4"></path>
+              <path d="M6 13a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+              <path d="M18 16a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+              <path d="M8.7 15.1 15.3 17.9"></path>
+              <path d="M15.3 6.1 8.7 8.9"></path>
+            </svg>
+          </a>
+          <a href="mailto:hello@malgudimylari.com" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-brand-maroon/15 bg-white" aria-label="Mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+          </a>
+        </div>
       </div>
       <div>
         <h3 class="font-display text-2xl text-brand-charcoal">Explore</h3>
         <div class="mt-5 space-y-3 text-brand-brown">
           <a href="./story.html" class="nav-link block">Our Story</a>
-          <a href="./specialties.html" class="nav-link block">Signature Dishes</a>
-          <a href="./menu.html" class="nav-link block">Menu Highlights</a>
-          <a href="./franchise.html" class="nav-link block">Franchise</a>
+          <a href="./menu.html" class="nav-link block">Menu</a>
+          <a href="./gallery.html" class="nav-link block">Gallery</a>
+          <a href="./contact.html" class="nav-link block">Contact</a>
         </div>
       </div>
       <div>
-        <h3 class="font-display text-2xl text-brand-charcoal">Contact</h3>
+        <h3 class="font-display text-2xl text-brand-charcoal">Contact Us</h3>
         <div class="mt-5 space-y-3 text-brand-brown">
-          <p>Nazarbad Road, Mysore 570010</p>
-          <p>+91 80123 45678</p>
-          <p>hello@malgudimylari.in</p>
+          <p>123 Heritage Lane, Vontikoppal</p>
+          <p>Mysore, Karnataka 570002</p>
+          <p>+91 800 123 4567</p>
         </div>
       </div>
       <div>
-        <h3 class="font-display text-2xl text-brand-charcoal">Book A Visit</h3>
-        <p class="mt-5 leading-7 text-brand-brown">Lunches, dinners, and group feasts with traditional South Indian non-veg spreads.</p>
-        <a href="./reserve.html" class="mt-5 inline-flex rounded-xl bg-brand-maroon px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-maroonDeep">
-          Go To Reservations
-        </a>
+        <h3 class="font-display text-2xl text-brand-charcoal">Newsletter</h3>
+        <p class="mt-5 leading-7 text-brand-brown">Subscribe for seasonal specials and heritage stories.</p>
+        <form class="mt-5 space-y-3">
+          <input type="email" placeholder="Email Address" class="newsletter-input" />
+          <button type="submit" class="inline-flex w-full items-center justify-center rounded-xl bg-brand-maroon px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-maroonDeep">
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
     <div class="border-t border-brand-gold/15 px-5 py-5 text-center text-sm text-brand-brown lg:px-8">
-      Copyright 2026 Malgudi Mylari. Crafted for authentic South Indian heritage dining.
+      &copy; 2024 Malgudi Mylari. Heritage Refined.
     </div>
   </footer>
-
-  <script>
-    (() => {
-      const carousel = document.querySelector("[data-carousel]");
-      if (!carousel) return;
-
-      const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
-      const thumbs = Array.from(carousel.querySelectorAll("[data-carousel-thumb]"));
-      const prevButton = carousel.querySelector("[data-carousel-prev]");
-      const nextButton = carousel.querySelector("[data-carousel-next]");
-      const progressBar = carousel.querySelector("[data-carousel-progress]");
-      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      let currentIndex = 0;
-      let intervalId = null;
-
-      const renderSlide = (index) => {
-        currentIndex = (index + slides.length) % slides.length;
-        slides.forEach((slide, slideIndex) => {
-          slide.classList.toggle("active", slideIndex === currentIndex);
-        });
-        thumbs.forEach((thumb, thumbIndex) => {
-          thumb.classList.toggle("is-active", thumbIndex === currentIndex);
-        });
-        progressBar.style.width = `${((currentIndex + 1) / slides.length) * 100}%`;
-      };
-
-      const stopAutoPlay = () => {
-        if (intervalId) {
-          window.clearInterval(intervalId);
-          intervalId = null;
-        }
-      };
-
-      const startAutoPlay = () => {
-        if (reducedMotion) return;
-        stopAutoPlay();
-        intervalId = window.setInterval(() => {
-          renderSlide(currentIndex + 1);
-        }, 5000);
-      };
-
-      prevButton.addEventListener("click", () => {
-        renderSlide(currentIndex - 1);
-        startAutoPlay();
-      });
-
-      nextButton.addEventListener("click", () => {
-        renderSlide(currentIndex + 1);
-        startAutoPlay();
-      });
-
-      thumbs.forEach((thumb, thumbIndex) => {
-        thumb.addEventListener("click", () => {
-          renderSlide(thumbIndex);
-          startAutoPlay();
-        });
-      });
-
-      carousel.addEventListener("mouseenter", stopAutoPlay);
-      carousel.addEventListener("mouseleave", startAutoPlay);
-
-      renderSlide(0);
-      startAutoPlay();
-    })();
-  </script>
+  <script src="./site.js" defer></script>
 </body>
 </html>
